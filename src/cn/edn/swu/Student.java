@@ -1,17 +1,17 @@
 package cn.edn.swu;
 
 public class Student {
-    private int id; //学号
+    private String id; //学号
     private String name; //姓名
     private String gender; //性别
     private int age; //年龄
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
-        System.out.println(this.name+" changed id");
+    public void setId(String id) {
+        System.out.println(this.name+"更换了学号");
         this.id = id;
     }
 
@@ -20,7 +20,7 @@ public class Student {
     }
 
     public void setName(String name) {
-        System.out.println(this.name+" changed name");
+        System.out.println(this.name+"更换了姓名");
         this.name = name;
     }
 
@@ -29,7 +29,7 @@ public class Student {
     }
 
     public void setGender(String gender) {
-        System.out.println(this.name+" changed gender");
+        System.out.println(this.name+"更换了性别");
         this.gender = gender;
     }
 
@@ -38,12 +38,12 @@ public class Student {
     }
 
     public void setAge(int age) {
-        System.out.println(this.name+" changed age");
+        System.out.println(this.name+"改变了年龄");
         this.age = age;
     }
 
     public Student(){}  //无参构造函数
-    public Student(int id,String name,String gender,int age){
+    public Student(String id,String name,String gender,int age){
         this.id=id;
         this.name=name;
         this.gender=gender;
@@ -51,9 +51,10 @@ public class Student {
     }  //带参数的初始化构造函数
 
     public void showInfo(){  //用于显示该学生的信息
-        System.out.println("The student's id is "+id);
-        System.out.println("The student's name is "+name);
-        System.out.println("The student's gender is "+gender);
-        System.out.println("The student's age is "+age);
+        System.out.println("学号： "+id);
+        System.out.println("姓名："+name);
+        System.out.println("性别："+gender);
+        System.out.println("年龄："+age);
+        System.out.println("--------------");
     }
 }

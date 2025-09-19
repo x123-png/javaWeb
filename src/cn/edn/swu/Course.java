@@ -10,7 +10,7 @@ public class Course {
     }
 
     public void setCourseId(String courseId) {
-        System.out.println(this.courseName+" changed course id");
+        System.out.println(this.courseName+"课程更换了编号");
         this.courseId = courseId;
     }
 
@@ -19,7 +19,7 @@ public class Course {
     }
 
     public void setCourseName(String courseName) {
-        System.out.println("This course changed name");
+        System.out.println("更换了课程");
         this.courseName = courseName;
     }
 
@@ -28,7 +28,7 @@ public class Course {
     }
 
     public void setTeacher(String teacher) {
-        System.out.println(this.courseName+" changed course teacher");
+        System.out.println(this.courseName+"课程更换了教师");
         this.teacher = teacher;
     }
 
@@ -41,8 +41,9 @@ public class Course {
     }  //带有参数的构造函数
 
     public void showInfo(){
-        System.out.println("The course's name is "+courseName);
-        System.out.println("The course's id is "+courseId);
-        System.out.println("The course's teacher is "+teacher);
+        System.out.println("课程编号:"+courseId);
+        System.out.println("课程名称："+courseId);
+        System.out.println("任课教师："+teacher);
+        System.out.println("--------------");
     }
 }
